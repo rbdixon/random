@@ -1,0 +1,22 @@
+<head>
+  <title>random</title>
+</head>
+
+<body>
+  {{> hello}}
+  {{> status}}
+</body>
+
+<template name="hello">
+  <h1>Random value</h1>
+  {{clients}}: {{random}}
+</template>
+
+<template name="status">
+	<ul>
+		<li>state: {{connected}}</li>
+		<li>status: {{status}}</li>
+		<li>retry count: {{retryCount}}</li>
+		<li>retry time: {{retryTime}}</li>
+	</ul>
+</template>
